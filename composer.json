@@ -21,11 +21,21 @@
         "league/uri": "^6.5",
         "masterminds/html5": "^2.7.2"
     },
+    "require-dev": {
+        "phpunit/phpunit": "~8.0 || 9.*"
+    },
     "autoload": {
-        "psr-4": { "Symfony\\Component\\HtmlSanitizer\\": "" },
+        "psr-4": { 
+            "Symfony\\Component\\HtmlSanitizer\\": "" 
+        },
         "exclude-from-classmap": [
             "/Tests/"
         ]
+    },
+    "autoload-dev" : {
+        "psr-4" : {
+            "Symfony\\Component\\HtmlSanitizer\\Tests\\": "Tests/"
+        }
     },
     "minimum-stability": "dev"
 }
